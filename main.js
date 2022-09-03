@@ -7,10 +7,6 @@ function modelReady(){
     classifier.classify( gotResults);
   }
 
-function gotResults(){
-    if (error) {
-        console.error(error);
-      } else {
-        console.log(results);
-    }
+  function gotResults(error, results){
+    console.log('Got Result');
 }
